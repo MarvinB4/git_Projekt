@@ -2,7 +2,7 @@
 
 ## Repo erstellen und auch remote verknüpfen 
 
-Auf Github.com Account sollte bereits ein ssh Key hinterlegt sein (Falls nicht klicke [Hier]"https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent")
+Auf Github.com Account sollte bereits ein ssh Key hinterlegt sein (Falls nicht klicke [Hier](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
 
 Die globalen Variablen sind auf eurem System hinterlegt
 
