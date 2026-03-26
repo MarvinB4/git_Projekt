@@ -39,7 +39,7 @@ resource "aws_security_group" "ssh" {
 resource "aws_instance" "demo" {
   ami                    = "ami-0b6c6ebed2801a5cb" # ubuntu
   instance_type          = "t2.micro"
-  key_name               = "key-00b5f686a39d47f94"
+  key_name               = "schu"
   vpc_security_group_ids = [aws_security_group.ssh.id]
   tags = {
     Name = "test-server-iac"
