@@ -36,3 +36,22 @@ output "instance_id" {
 output "public_ip" {
   value = aws_instance.demo.public_ip
 }
+
+resource "aws_security_group" "ssh" {
+  name        = "allow-ssh"
+  description = "Allow SSH inbound traffic"
+
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
