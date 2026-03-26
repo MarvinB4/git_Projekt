@@ -8,7 +8,7 @@ terraform {
 
 
   backend "s3" {
-    bucket = "buckettestzweck"
+    bucket = "eimer123"
     key    = "app/terraform.tfstate" # Key könnt ihr selbst bestimmen, sollte nur über die deployments einheitlich sein
     region = "us-east-1"
   }
@@ -19,9 +19,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "demo" {
-  ami                    = "ami-02dfbd4ff395f2a1b" # ubuntu
+  ami                    = "ami-0b6c6ebed2801a5cb" # ubuntu
   instance_type          = "t2.micro"
-  key_name               = "key-0601893f74e9aa454"
+  key_name               = "key-00b5f686a39d47f94"
   vpc_security_group_ids = [aws_security_group.ssh.id]
   tags = {
     Name = "test-server-iac"
